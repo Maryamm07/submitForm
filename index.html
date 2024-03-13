@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Submit</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="image">
+          <img src="Logo.jpeg">
+        </div>   
+        <div class="navbarComponents">
+          <a href="/home">Home</a>
+          <a href="/book">Books</a>
+          <a href="/chapters">Chapters</a>
+          <a href="/logout">Logout</a>
+        </div>
+        <div class="bars">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="dropDown">
+         <li><a href="/home">Home</a></li>
+          <li><a href="/book">Books</a></li>
+          <li><a href="/chapters">Chapters</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </div>
+    </div>
+    <div id="content" class="container">
+        <div class="inp">
+            <input type="number" placeholder="Enter the book Code...">
+            <button>SUBMIT FORM</button>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.querySelector('.bars');
+        const menu = document.querySelector('.dropDown');
+        const icon = document.querySelector('.bars i');
+
+        toggleButton.addEventListener('click', function () {
+            menu.classList.toggle('open');  
+            icon.classList.toggle('fa-xmark');
+            icon.classList.toggle('fa-bars');
+        }) 
+      </script>
+</body>
+</html>
